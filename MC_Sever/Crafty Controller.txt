@@ -1,0 +1,3 @@
+stránka: https://192.168.18.3:8443
+jméno: testuser
+heslo: testuser
