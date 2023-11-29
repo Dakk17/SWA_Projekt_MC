@@ -4,10 +4,12 @@
     box-sizing: border-box;
 }
 
-/* Hlavička */
+/* Navigace */
 
 nav {
     background-color: black;
+    position: fixed;
+    width: 100%;
 }
 
 .login {
@@ -41,4 +43,33 @@ nav ul li a:hover {
     content: '';
     display: block;
     clear: both;
+}
+
+/* Main */
+
+main {
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(Obrazky/Header-Background.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Footer */
+
+footer {
+    background-color: rgba(5,9,14,0.97);
+    width: 100%;
+    color: rgba(255,255,255,0.6);
+    text-align: center;
+    padding: 2%;
+}
+
+.odkaz-footer {
+    text-decoration: none;
+    color: rgba(255,255,255,0.6);
+}
+
+.copy-foot p{
+    margin: 1%;    
 }
