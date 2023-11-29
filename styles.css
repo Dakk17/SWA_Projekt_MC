@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Hlavička */
+
+nav {
+    background-color: black;
+}
+
+.login {
+    float: right;
+    margin-right: 1%;
+}
+
+nav ul li {
+    float: left;
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    font-size: 28px;
+    font-weight: bold;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+}
+
+nav ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+
+.float:after {
+    content: '';
+    display: block;
+    clear: both;
+}
