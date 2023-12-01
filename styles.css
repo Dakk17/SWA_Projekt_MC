@@ -47,13 +47,50 @@ nav ul li a:hover {
 
 /* Main */
 
+
 main {
     background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(Obrazky/Header-Background.jpg);
     background-size: cover;
     height: 100vh;
     background-position: center;
+    background-size: cover; 
     background-attachment: fixed;
+    z-index: -1;
 }
+
+
+/* Ip Main */
+
+.ip-server {
+    color: white;
+    display: inline-block;
+    position: relative;
+    width: 30%;
+    top: 30%;
+    left: 35%;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 10px;
+}
+
+.texts {
+    letter-spacing: 1.3px;
+    font-size: 20px ;
+}
+
+.texts p {
+    margin: 10px;
+}
+
+.ip-div {
+    display: flex;
+    justify-content: space-between;
+    padding: 8%;
+}
+
+.ip-text {
+    font-weight: bold;
+}
+
 
 /* Footer */
 
