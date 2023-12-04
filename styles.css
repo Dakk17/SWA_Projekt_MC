@@ -53,16 +53,13 @@ nav ul li a:hover {
 
 
 /* Main */
-
-
 header {
     position: relative;
-    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(Obrazky/Header-Background.jpg);
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(Obrazky/Header-Background.jpg);
     background-size: cover;
     height: 100vh;
     background-position: center;
-    background-size: cover; 
-    background-attachment: fixed;   
+    background-attachment: fixed;
 }
 
 .ip-server {
@@ -121,6 +118,7 @@ header {
 
 main {
     background: linear-gradient(rgb(15,15,15),rgb(30,30,30));
+
 }
 
 .o-nas {
