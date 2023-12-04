@@ -32,14 +32,15 @@ nav ul li a {
     font-weight: bold;
     display: inline-block;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    padding: 20px;
+    margin: 30px 15px; 
 
-    transition: 0.5s;
+    transition: 0.4s;
 }
 
 
 nav ul li a:hover {
     font-size: 28px;
+    
 }
 
 
@@ -126,7 +127,7 @@ footer {
     width: 100%;
     color: rgba(255,255,255,0.6);
     text-align: center;
-    padding: 2%;
+    padding: 1.5%;
 }
 
 .odkaz-footer {
