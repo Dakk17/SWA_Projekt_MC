@@ -10,6 +10,7 @@ nav {
     background-color: rgba(0,0,0,0.4);
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 .login {
@@ -29,7 +30,7 @@ nav ul li a {
     font-size: 28px;
     font-weight: bold;
     display: inline-block;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 15px;
 }
 
@@ -49,13 +50,13 @@ nav ul li a:hover {
 
 
 main {
+    position: relative;
     background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(Obrazky/Header-Background.jpg);
     background-size: cover;
     height: 100vh;
     background-position: center;
     background-size: cover; 
-    background-attachment: fixed;
-    z-index: -1;
+    background-attachment: fixed;   
 }
 
 
@@ -65,9 +66,9 @@ main {
     color: white;
     display: inline-block;
     position: relative;
-    width: 30%;
+    width: 40%;
     top: 30%;
-    left: 35%;
+    left: 30%;
     background-color: rgba(0,0,0,0.6);
     border-radius: 10px;
 }
@@ -75,6 +76,8 @@ main {
 .texts {
     letter-spacing: 1.3px;
     font-size: 20px ;
+    display: flex;
+    flex-direction: column;
 }
 
 .texts p {
@@ -90,6 +93,20 @@ main {
 .ip-text {
     font-weight: bold;
 }
+
+.odkaz-pripojit {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 3%;
+    border-radius: 10px;
+    background-color: red;
+    align-self: center;
+    letter-spacing: 1.5px;
+}
+
 
 
 /* Footer */
