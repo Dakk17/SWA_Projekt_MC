@@ -31,7 +31,7 @@ nav ul li a {
     font-size: 24px;
     font-weight: bold;
     display: inline-block;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 30px 15px; 
 
     transition: 0.4s;
@@ -83,6 +83,7 @@ main {
     font-size: 20px ;
     display: flex;
     flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .texts p {
@@ -104,7 +105,7 @@ main {
     color: white;
     text-decoration: none;
     font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 3%;
     border-radius: 10px;
     background-color: red;
