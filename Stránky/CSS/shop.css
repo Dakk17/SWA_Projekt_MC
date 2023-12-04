@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+main {
+    padding: 20px;
+}
+
+.product {
+    border: 5px hidden #ffffff;
+    border-radius: 500px;
+    padding: 5px;
+    margin: 10%;
+    text-align: center;
+    width: 500px;
+}
+
+.product img {
+    margin-top: 5%;
+    max-width: 100%;
+    height: auto;    
+}
+
+.product h2 {
+    color: #0950e8;
+}
+
+.product p {
+    color: #ffffff;
+}
