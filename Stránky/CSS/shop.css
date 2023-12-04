@@ -1,34 +1,139 @@
 body {
     font-family: Arial, sans-serif;
+    min-height: 100vh; 
+    margin: 0; 
 }
 
 main {
     padding: 20px;
 }
+
 .shoplink{
     padding-bottom: 2px;
     border-bottom: 2px solid red;
 }
 
 .product {
-    border: 5px hidden #ffffff;
-    border-radius: 500px;
-    padding: 5px;
-    margin: 10%;
+    border: 1px solid #ccc;
+    margin-left: 50px;
+    margin-top: 200px;
+    margin-right:50px;
+    padding: 15px;
+    display: inline-block;
     text-align: center;
-    width: 500px;
+    background-color: #f8f8f8;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 .product img {
-    margin-top: 5%;
-    max-width: 100%;
-    height: auto;    
+    width: 100%;
+    height: auto;
 }
 
 .product h2 {
-    color: #0950e8;
+    font-size: 20px;
+    margin: 10px 0;
 }
 
 .product p {
-    color: #ffffff;
+    font-size: 16px;
+    color: #666;
+}
+
+.product button {
+    background-color: #0099cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.product button:hover {
+    background-color: #00789c;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* CAROUSEL */
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%; 
+    height: 300px; 
+    overflow: visible;
+    position: relative;
+}
+
+.carousel-item {
+    margin-top: 500px;
+    width: 30%; 
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.carousel-item img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+button {
+    background-color: #0099cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.button span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00789c;
+    transition: transform 0.5s;
+    transform: translateY(100%);
+}
+
+.button:hover span {
+    transform: translateY(0);
+}
+
+.carousel-arrow {
+    cursor: pointer;
+    position: absolute;
+    top: calc(50% - 25px);
+    transform: translateY(-50%);
+    font-size: 24px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 50%;
+}
+
+.carousel-arrow.left {
+    left: 10px;
+}
+
+.carousel-arrow.right {
+    right: 10px;
 }
