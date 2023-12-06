@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Navigace */
+
+nav {
+    background-color: rgba(0,0,0,0.4);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.login {
+    float: right;
+    margin-right: 1%;
+}
+
+nav ul li {
+    float: left;
+    list-style-type: none;
+    margin-left: 5px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 30px 15px; 
+
+    transition: 0.4s;
+}
+
+
+nav ul li a:hover {
+    font-size: 28px;
+    
+}
+
+
+
+.float:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/* Main */
+header {
+    position: relative;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(Obrazky/Header-Background.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    background-attachment: fixed;    
+}
+
+.ip-server {
+    color: white;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    top: 22.5%;
+    width: 40%;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 10px;
+}
+
+.texts {
+    letter-spacing: 1.3px;
+    font-size: 20px ;
+    display: flex;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.texts p {
+    margin: 10px;
+}
+
+.ip-div {
+    display: flex;
+    justify-content: space-between;
+    padding: 8%;
+}
+
+.ip-text {
+    font-weight: bold;
+}
+
+.odkaz-pripojit {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 3%;
+    border-radius: 10px;
+    background-color: red;
+    align-self: center;
+    letter-spacing: 1.5px;
+}
+
+.odkaz-pripojit:hover {
+    background-color: white;
+    color: red;
+    transition: 0.5s;
+}
+
+/* Main */
+
+main {
+    background: linear-gradient(rgb(15,15,15),rgb(30,30,30));
+
+}
+
+.o-nas {
+    position: relative;
+    color:white;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.o-nas h2 {
+    font-size: 42px;
+    font-weight: bold;
+    padding: 5%;
+}
+
+.o-nas p {
+    letter-spacing: 1.3px;
+    padding-bottom: 5%;
+}
+
+/* Footer */
+
+footer {
+    background-color: rgba(5,9,14,0.97);
+    width: 100%;
+    color: rgba(255,255,255,0.6);
+    text-align: center;
+    padding: 1.5%;
+}
+
+.odkaz-footer {
+    text-decoration: none;
+    color: rgba(255,255,255,0.6);
+}
+
+.copy-foot p{
+    margin: 1%;    
+}
