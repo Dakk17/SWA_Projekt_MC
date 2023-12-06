@@ -59,7 +59,7 @@ header {
     background-size: cover;
     height: 100vh;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: fixed;    
 }
 
 .ip-server {
