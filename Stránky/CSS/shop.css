@@ -22,9 +22,8 @@ body {
 }  
 
 .carousel-items {
-    border: 5px solid white; /* MŮŽE BÝT I BEZ BORDERU*/
+    border: 10px solid white; /* MŮŽE BÝT I BEZ BORDERU*/
     box-sizing: border-box;
-    width: 40%;
     max-width: 1000px;
     position: relative;
     margin-top: 40%;
@@ -32,15 +31,15 @@ body {
 
 }
 
-.carousel-item {
+.carousel-item {    
+    width: 100%;
     color: white;
-    padding: 20px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align:center;
     white-space: nowrap;
 }
 
