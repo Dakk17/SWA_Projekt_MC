@@ -22,16 +22,13 @@ body {
 }  
 
 .carousel-items {
-    border: 10px solid white; /* MŮŽE BÝT I BEZ BORDERU*/
-    box-sizing: border-box;
     max-width: 1000px;
     position: relative;
     margin-top: 40%;
-    background-color: rgba(255, 255, 255, 0.4) /* NEMUSÍ BÝT */
 
 }
 
-.carousel-item {    
+.carousel-item {   
     width: 100%;
     color: white;
     box-sizing: border-box;
@@ -41,6 +38,16 @@ body {
     justify-content: center;
     text-align:center;
     white-space: nowrap;
+}
+.carousel-item img{   
+    box-shadow: -3px -3px 2px rgba(255, 255, 255, 0.3),
+                15px 20px 5px rgba(0,0,0,0.35),
+                20px 25px 15px rgba(0,0,0,0.35);
+    border: 2px solid rgb(255, 255, 255); /* MŮŽE BÝT I BEZ BORDERU*/
+    border-radius: 65px;
+    box-sizing: border-box;
+    display: flex;
+    object-fit: cover;
 }
 
 button {
