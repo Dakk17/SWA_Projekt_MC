@@ -23,7 +23,7 @@ body {
 .carousel-arrow {
     cursor: pointer;
     position: absolute;
-    top: 50%; /* POZICE ŠIPEK (JAK NAHOŘE BUDOU). BUDE SE MĚNIT PODLE OBRÁZKU*/
+    top: 50%; 
     width: auto;
     margin-top: -22px;
     padding: 16px;
@@ -47,7 +47,6 @@ body {
     max-width: 1000px;
     position: relative;
     margin-top: 40%;
-
 }
 
 .carousel-item {   
@@ -76,7 +75,17 @@ body {
     backface-visibility: hidden;
 }
 
+.fade{ /* JEDNÁ SE O FADE OBRÁZKŮ PŘI POUŽITÍ ŠIPEK NE PŘI PŘEJETÍ NA OBRÁZEK (HOVER)*/
+    animation-name: fade;
+    animation-duration: 1.25s;
+}
+@keyframes fade {
+    from{opacity: 0;}
+    to{opacity: 1;}   
+  }
+
 .middle {
+    display: grid;
     background-color: rgb(0, 0, 0);
     box-shadow: -2px -2px 2px rgba(255, 255, 255, 0.3),
                 20px 25px 10px rgba(0,0,0,0.35),
@@ -95,12 +104,13 @@ body {
 
   }
 .member{    
+    color: rgb(200, 47, 47);
     margin-bottom: 2vw;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 2vw;
     text-align: center;
-    margin-top:25% ;    
+    margin-top:20% ;    
   }
 .vyhody-head{
     margin-bottom: 15px;
@@ -110,6 +120,7 @@ body {
 }
 
 .vyhody{
+    
     font-size: 17.5px;
     margin-top: 10px;
     margin-left: 55%;
@@ -138,6 +149,7 @@ body {
   }
 
 .button {
+    grid-template-columns: 50px;
     text-transform: uppercase;
     font-weight: bold;
     background-color: red;
@@ -151,6 +163,9 @@ body {
     position: relative;
     overflow: hidden;
     z-index: 1;
+    width: 200px;
+    margin: auto;
+    margin-bottom: 30px;
 }
 
 .button:hover{
@@ -177,6 +192,7 @@ body {
 .button:hover span {    
     transform: translateX(0);    
 }
+
 
 
 
