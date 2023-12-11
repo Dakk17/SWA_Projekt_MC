@@ -16,10 +16,9 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%; 
-    padding: auto;
-    height: 40%; 
+    height: 300px; 
     overflow: visible;
-    position: relative;  
+    position: relative;
 }  
 .carousel-arrow {
     cursor: pointer;
@@ -63,8 +62,8 @@ body {
     white-space: nowrap;
 }
 .carousel-item .image{   
-    width: 625px;
-    height: 750px;
+    width: 700px;
+    height: 840px;
     box-shadow: -3px -3px 2px rgba(255, 255, 255, 0.3),
                 15px 20px 5px rgba(0,0,0,0.35),
                 20px 25px 15px rgba(0,0,0,0.35);
@@ -86,6 +85,7 @@ body {
   }
 
 .middle {
+    margin: auto;  
     display: grid;
     background-color: rgb(0, 0, 0);
     box-shadow: -2px -2px 2px rgba(255, 255, 255, 0.3),
@@ -104,7 +104,7 @@ body {
     text-align: center
 
   }
-.member{    
+.member{  
     color: rgb(200, 47, 47);
     margin-bottom: 2vw;
     text-transform: uppercase;

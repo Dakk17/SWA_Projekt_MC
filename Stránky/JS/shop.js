@@ -34,3 +34,19 @@ function updateCarousel() {
         }
     });
 }
+function changeClass(element) {
+    if (element.classList.contains('left')) {
+        element.classList.add('left-active');
+        setTimeout(function () {
+            element.classList.remove('left-active');
+        }, 500);
+    } else if (element.classList.contains('right')) {
+        element.classList.add('right-active');
+        setTimeout(function () {
+            element.classList.remove('right-active');
+        }, 500);
+    }
+}
+
+var slideIndex = 0;
+	
