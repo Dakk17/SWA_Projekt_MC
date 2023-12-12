@@ -1,15 +1,18 @@
+/* styles.css */
+
 .registracelink {
     padding-bottom: 2px;
     border-bottom: 2px solid red;
 }
 
-form{
+form {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.label_div{
+
+.label_div {
     color: #ffffff;
     display: grid;
     align-items: center;
@@ -36,12 +39,13 @@ form{
     margin-bottom: 30px;
 }
 
-.button:hover{
+.button:hover {
     font-size: 20px;
     color: red;
     transition: 0.5s;
 }
-.button:active{
+
+.button:active {
     background-color: red;
 }
 
@@ -53,10 +57,14 @@ form{
     height: 100%;
     background-color: rgb(255, 255, 255);
     transition: transform 0.25s;
-    transform: translateX(-100%);  
-    z-index: -1;  
+    transform: translateX(-100%);
+    z-index: -1;
 }
 
-.button:hover span {    
-    transform: translateX(0);    
+.button:hover span {
+    transform: translateX(0);
+}
+
+.inputbutton{
+    display: none;
 }

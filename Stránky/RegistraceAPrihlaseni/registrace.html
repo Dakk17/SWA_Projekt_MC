@@ -26,24 +26,24 @@
                 </div>
             </ul>
         </nav>
-            <form action="../PHP/index.php" method="post">
-                <label for="name" class="label_div">Jméno:</label>
-                <input type="text" name="name" required><br>
+        <form action="../PHP/index.php" method="post">        
+            <label for="realname" class="label_div">Jméno:</label>
+            <input type="text" placeholder="Zadejte jméno" name="realname" required><br>
         
-                <label for="realname" class="label_div">Skutečné jméno:</label>
-                <input type="text" name="realname" required><br>
+            <label for="password" class="label_div">Heslo:</label>
+            <input type="password" placeholder="Zadejte heslo" name="password" required><br>
         
-                <label for="password" class="label_div">Heslo:</label>
-                <input type="password" name="password" required><br>
+            <div class="optional-container">
+                <label for="email" class="label_div optional-label">E-mail:</label>
+                <input type="email" placeholder="Zadejte E-mail (volitelné)" name="email" class="optional-input"><br>
+            </div>
         
-                <label for="address" class="label_div">Adresa:</label>
-                <input type="text" name="address" required><br>
-        
-                <label for="email" class="label_div">E-mail:</label>
-                <input type="email" name="email" required><br>
-        
-                <input type="submit" value="Registrovat" class="button">
-            </form>
+            <button class="button">
+                <span></span>
+                Registrovat
+                <input type="submit" value="Registrovat" class="inputbutton">
+            </button>
+        </form>
     </header>
     <footer>
         <span class="copy-foot"><p>&copy; Všechna práva vyhrazena</p><a href="" class="odkaz-footer">Ochrana osobních údajů</a></span>
