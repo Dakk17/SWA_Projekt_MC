@@ -1,9 +1,9 @@
 <?php
 
 $servername = "sql11.freesqldatabase.com";
-$username = "sql11669104";
-$password = "4MyME1HJFa";
-$dbname = "sql11669104";
+$username = "sql11671132";
+$password = "gCKLKEAIi7";
+$dbname = "sql11671132";
 
 // Připojení k databázi
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($email !== null) {
         $checkQuery = "SELECT * FROM users WHERE LOWER(name) = LOWER('$name') OR email = '$email'";
     } else {
-        $checkQuery = "SELECT * FROM users WHERE LOWER(name) = LOWER('$name') AND email =!";
+        $checkQuery = "SELECT * FROM users WHERE LOWER(name) = LOWER('$name') AND email IS NULL";
     }
     
     $checkResult = $conn->query($checkQuery);

@@ -1,9 +1,9 @@
 <?php
 
-$servername = "sql11.freesqldatabase.com"; // nebo IP adresa serveru s databází
-$username = "sql11669104";
-$password = "4MyME1HJFa";
-$dbname = "sql11669104";
+$servername = "sql11.freesqldatabase.com";
+$username = "sql11671132";
+$password = "gCKLKEAIi7";
+$dbname = "sql11671132";
 
 // Připojení k databázi
 $conn = new mysqli($servername, $username, $password, $dbname);

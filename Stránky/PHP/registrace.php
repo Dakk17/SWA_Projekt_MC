@@ -4,6 +4,20 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
+// Připojení k databázi
+$servername = "sql11.freesqldatabase.com";
+$username = "sql11671132";
+$password = "gCKLKEAIi7";
+$dbname = "sql11671132";
+
+// Připojení k databázi
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Kontrola připojení
+if ($conn->connect_error) {
+    die("Chyba připojení k databázi: " . $conn->connect_error);
+}
+
 // Funkce pro získání nového ID
 function getNewId($connection) {
     $result = $connection->query("SELECT MAX(id) AS max_id FROM users");
@@ -15,14 +29,25 @@ function getNewId($connection) {
 // Kontrola, zda jsou data POST metody dostupná
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["realname"], $_POST["password"], $_POST["address"], $_POST["email"])) {
     $realname = $conn->real_escape_string($_POST["realname"]);
-    $name = strtolower($realname); // Uložení jména jako lowercase
+    $name = strtolower($realname);
     $password = password_hash($_POST["password"], PASSWORD_DEFAULT);
     $address = $conn->real_escape_string($_POST["address"]);
     $email = $conn->real_escape_string($_POST["email"]);
 
-    // Kontrola, zda uživatel s daným jménem nebo emailem již existuje
-    $checkQuery = "SELECT * FROM users WHERE LOWER(name) = LOWER('$name') OR email = '$email'";
-    $checkResult = $conn->query($checkQuery);
+   // Výpis hodnoty emailu
+   echo "Hodnota proměnné \$email: " . $email . PHP_EOL;
+
+
+   // Kontrola, zda uživatel s daným jménem nebo emailem již existuje
+   if ($email !== null) {
+       echo "Podmínka \$email !== null je TRUE<br>";
+       $checkQuery = "SELECT * FROM users WHERE LOWER(name) = LOWER('$name') OR (email = '$email' AND email IS NOT NULL)";
+   } else {
+       echo "Podmínka \$email !== null je FALSE<br>";
+       $checkQuery = "SELECT * FROM users WHERE LOWER(name) = LOWER('$name')";
+   }
+
+        $checkResult = $conn->query($checkQuery);
 
     if ($checkResult->num_rows > 0) {
         echo "Uživatel s tímto jménem nebo emailem již existuje.";
