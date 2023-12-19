@@ -35,9 +35,9 @@ $minecraftDb = connectToSQLite('E:\MC_SWA\servers\eb85dfb1-494e-4bb7-92eb-723cb1
 
 // Připojení k MySQL databázi
 $servername = "sql11.freesqldatabase.com";
-$username = "sql11669104";
-$password = "4MyME1HJFa";
-$dbname = "sql11669104";
+$username = "sql11671132";
+$password = "gCKLKEAIi7";
+$dbname = "sql11671132";
 $mysqlConn = connectToMySQL($servername, $username, $password, $dbname);
 
 // Kontrola připojení k MySQL databázi
