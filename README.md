@@ -1,1 +1,1 @@
-EZ AF
+server
