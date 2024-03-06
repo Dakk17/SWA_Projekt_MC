@@ -50,7 +50,8 @@ body {
 }
 
 .carousel-item {   
-    border-radius: 65px     ;
+    border-radius: 65px;
+    position: rel;
     width: 100%;
     color: white;
     box-sizing: border-box;
@@ -74,6 +75,17 @@ body {
     transition: .5s ease;
     backface-visibility: hidden;
 }
+.carousel-item .content {
+    position: relative;
+}
+
+.carousel-item .middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
 
 .fade{ /* JEDNÁ SE O FADE OBRÁZKŮ PŘI POUŽITÍ ŠIPEK NE PŘI PŘEJETÍ NA OBRÁZEK (HOVER)*/
     animation-name: fade;
@@ -96,12 +108,12 @@ body {
     border-radius: 65px;
     transition: .5s ease;
     opacity: 0;
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    text-align: center
+    text-align: center;    
 
   }
 .member{  

@@ -2,3 +2,35 @@
     padding-bottom: 2px;
     border-bottom: 2px solid red;
 }
+.novinky{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: red;
+    align-items: center;
+    text-align: center;
+}
+
+#newsContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.newsItem {
+    background-color: #555;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.newsItem:hover {
+    transform: scale(1.05);
+}

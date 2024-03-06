@@ -2,3 +2,58 @@
     padding-bottom: 2px;
     border-bottom: 2px solid red;
 }
+
+.kontakt{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+
+#contactInfo {
+    margin-top: 20px;
+}
+
+#contactInfo h3 {
+    color: red; 
+}
+
+#contactForm {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #555;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#contactForm label,
+#contactForm textarea,
+#contactForm input[type="text"],
+#contactForm input[type="email"] {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#contactForm textarea {
+    resize: vertical;
+}
+
+#contactForm button {
+    background-color: #333;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#contactForm button:hover {
+    background-color: #444;
+}

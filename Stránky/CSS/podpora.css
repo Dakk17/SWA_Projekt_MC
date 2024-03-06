@@ -2,3 +2,58 @@
     padding-bottom: 2px;
     border-bottom: 2px solid red;
 }
+
+.podpora{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+
+#supportForm {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #555;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#supportForm label,
+#supportForm textarea,
+#supportForm input[type="text"],
+#supportForm input[type="email"] {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#supportForm textarea {
+    resize: vertical;
+}
+
+#supportForm button {
+    background-color: #333;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#supportForm button:hover {
+    background-color: #444;
+}
+
+#faq {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #555;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
