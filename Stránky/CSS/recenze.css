@@ -33,6 +33,15 @@
     transition: transform 0.3s ease-in-out;
 }
 
+.reviewItem2 {
+    display: none;
+}
+
+.reviewItem p {
+    font-weight: 100;
+    font-size: 18px;
+}
+
 #prevButton,
 #nextButton {
     margin-top: 10px;
