@@ -2,3 +2,23 @@
     padding-bottom: 2px;
     border-bottom: 2px solid red;
 }
+
+.images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 10%;   
+}
+
+.picture {
+    width: 640px;
+    height: 360px;
+    margin: 15px;
+    border-radius: 15px;
+    -webkit-user-select: none;
+}
+
+.picture:hover {
+    cursor: pointer;
+}
