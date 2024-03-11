@@ -14,7 +14,13 @@
     text-align: center;
 }
 
-.serverItem {    
+.serverBlock {
+  position: relative;
+  display: grid;
+  justify-content: center;
+}
+
+.serverItem {
     background-color: #555;
     padding: 15px;
     margin: 10px;
@@ -24,7 +30,7 @@
     color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease-in-out;
-}
+  }
 
 .serverItem:hover {
     transform: scale(1.05);
