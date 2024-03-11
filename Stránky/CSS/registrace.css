@@ -16,12 +16,66 @@ form {
     color: #ffffff;
     display: grid;
     align-items: center;
-    margin-top: 10px;
+}
+
+.register-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 12.5px;
+    height: 100%;
+  }
+  
+  .register-container label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 5px;
+  }
+  
+  .register-container input[type="text"],
+  .register-container input[type="email"],
+  .register-container input[type="password"] {
+    border: none;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  .register-container input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .register-container input[type="submit"]:hover {
+    background-color: #444;
+  }
+.button-container{
+    border-style: solid;
+    border-color: red;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 415px;
+    background-color:rgba(43, 43, 44, 0.805);
+    height: 500px;
 }
 
 .button {
-    margin-left: 8%;
-    margin-top: 20px;
     grid-template-columns: 50px;
     text-transform: uppercase;
     font-weight: bold;
@@ -37,6 +91,7 @@ form {
     z-index: 1;
     width: 200px;
     margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .button:hover {
